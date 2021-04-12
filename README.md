@@ -27,17 +27,18 @@ A mini project with SpringBoot based microservices with basic functionalities to
  Assumptions:
  =============
  1. the features are build with some random basic requirements, the idea is to showcase and focus on observablity principles of microservices
- 2. The source code doesnt consist of .JAR files, each microservice can be build seperately using : 'mvn clean install' command at place where pom.xml is present  for each microservices. 
+ 2. The source code doesnt consist of .JAR files, each microservice can be build seperately using : 'mvn clean install' command at place where pom.xml is present  for each  microservices. 
  3. Each microservices are configured using - 8000 (order), 8002(catalog), 8003(payment) tomcat server ports.
+ 
  
  
  
  URLs:
  ====
- 3. The local end-points  - 
-	a) Postman end-points for calling Create Order service which calls other business calls - Catalogue and Payment
-    a) http://localhost:16686/ - URL to view Jaeger distributed tracing
-	b) http://localhost:9090/ - URL to view Prometheus dashboard for application/system metrics
-	c) http://localhost:3000/d/RnsbxnXMz/create-order-monitoring-dashboard?orgId=1 -- URL to view Grafana dashboard for application/system metrics graphs
+  The local end-points  - 
+	a)  http://localhost:8080/service/order/vegetables: End-point for calling Create Order service which calls other business calls - Catalogue and Payment: 
+        b) http://localhost:16686/ - URL to view Jaeger distributed tracing
+	c) http://localhost:9090/ - URL to view Prometheus dashboard for application/system metrics
+	d) http://localhost:3000/d/RnsbxnXMz/create-order-monitoring-dashboard?orgId=1 -- URL to view Grafana dashboard for application/system metrics graphs
 
 
