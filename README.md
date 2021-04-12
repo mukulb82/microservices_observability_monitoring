@@ -21,7 +21,7 @@ A mini project with SpringBoot based microservices with basic functionalities to
  =========
  
  1. The three SpringBoot microservices are deployed in localhost as Embedded tomcat part of SpringBoot.
- 2. Jaeger, Prometheus, Grafana are deployed as docker containers.
+ 2. Jaeger, Prometheus, Grafana are deployed as docker containers. Required YMLs for for docker run are present in the source_code folder. 
  
  
  Assumptions:
@@ -29,6 +29,7 @@ A mini project with SpringBoot based microservices with basic functionalities to
  1. the features are build with some random basic requirements, the idea is to showcase and focus on observablity principles of microservices
  2. The source code doesnt consist of .JAR files, each microservice can be build seperately using : 'mvn clean install' command at place where pom.xml is present  for each microservices. 
  3. Each microservices are configured using - 8000 (order), 8002(catalog), 8003(payment) tomcat server ports.
+ 
  
  
  URLs:
